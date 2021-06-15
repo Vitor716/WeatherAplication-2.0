@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WeatherAplication</string>
+    <string name="btnSalvar">Salvar</string>
+    <string name="btnPesquisar">Pesquisar</string>
+    <string name="btnListar">Listar</string>
+    <string name="name">Pesquise sua cidade:</string>
+    <string name="todo">TODO ok</string>
+    <string name="btnGeo">Geolocalização</string>
+    <string name="btnBuscar">Pesquisar sua localização</string>
+    <string name="empty"></string>
+    <string name="clique">Clique aqui para saber a temperatura</string>
+    <string name="todos">TODO ok</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="press_me">Press me</string>
+</resources>
