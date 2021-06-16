@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private DataBase db;
 
-    Button btnPesquisar, btnListar, btnSalvar, btnGeo;
+    Button btnPesquisar, btnListar, btnSalvar, btnGeo, btnTemp;
     EditText editWord;
     String url;
     ListView list;
@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         btnGeo = findViewById(R.id.btnGeo);
         editWord = findViewById(R.id.editTextWord);
         list = findViewById(R.id.list);
+        btnTemp = findViewById(R.id.btnTemp);
 
         btnSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +57,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnTemp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Temp();
+            }
+        });
 
         btnListar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,4 +97,8 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, Geolocation.class);
             startActivity(intent);
         }
+         public void Temp(){
+             Intent intent = new Intent(this, Temperature.class);
+             startActivity(intent);
+         }
     }

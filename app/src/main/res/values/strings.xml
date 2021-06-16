@@ -13,4 +13,10 @@
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
     <string name="press_me">Press me</string>
+    <string name="textview">TextView</string>
+    <string name="temp">Temp</string>
+    <string name="txt">TextView</string>
+
+    <string name="nao">O sensor de temperatura não está funcionando</string>
+    <string name="tente">Tente novamente</string>
 </resources>
