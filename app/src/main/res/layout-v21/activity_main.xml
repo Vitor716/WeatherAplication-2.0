@@ -9,20 +9,17 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="155dp"
-        android:layout_height="0dp"
+        android:layout_width="192dp"
+        android:layout_height="148dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="25dp"
-        android:layout_marginBottom="22dp"
         android:contentDescription="@string/todo"
-        app:layout_constraintBottom_toTopOf="@+id/editTextWord"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/_48cf3136e934c808177eda441844318" />
 
     <Button
@@ -33,13 +30,11 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
+        android:layout_marginStart="8dp"
         android:text="@string/btnSalvar"
         app:backgroundTint="#00BCD4"
-        app:layout_constraintBottom_toTopOf="@+id/btnGeo"
-        app:layout_constraintEnd_toEndOf="@+id/btnGeo"
-        app:layout_constraintHorizontal_bias="0.455"
-        app:layout_constraintStart_toEndOf="@+id/btnGeo" />
+        app:layout_constraintStart_toEndOf="@+id/btnPesquisar"
+        app:layout_constraintTop_toTopOf="@+id/btnListar" />
 
     <Button
         android:id="@+id/btnListar"
@@ -49,13 +44,26 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="36dp"
         android:text="@string/btnListar"
         app:backgroundTint="#00BCD4"
-        app:layout_constraintBottom_toTopOf="@+id/btnSalvar"
-        app:layout_constraintStart_toStartOf="@+id/btnSalvar" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/btnTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/temp"
+        app:backgroundTint="#00BCD4"
+        app:layout_constraintStart_toStartOf="@+id/btnListar"
+        app:layout_constraintTop_toBottomOf="@+id/btnListar" />
 
     <Button
         android:id="@+id/btnPesquisar"
@@ -65,35 +73,35 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="12dp"
+        android:layout_marginStart="35dp"
         android:onClick="requestApiButtonClick"
         android:text="@string/btnPesquisar"
         app:backgroundTint="#00BCD4"
-        app:layout_constraintBottom_toTopOf="@+id/btnListar"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnSalvar"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextWord"
         android:layout_width="0dp"
-        android:layout_height="56dp"
+        android:layout_height="57dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginRight="35dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="24dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/name"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/btnPesquisar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -103,58 +111,67 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:contentDescription="@string/todo"
-        android:tint="#00BCD4"
         app:layout_constraintEnd_toEndOf="@+id/editTextWord"
-        app:layout_constraintTop_toTopOf="@+id/editTextWord"
-        app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="?android:attr/actionModeWebSearchDrawable"
+        app:tint="#00BCD4" />
 
     <Button
         android:id="@+id/btnGeo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginBottom="236dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="64dp"
         android:text="@string/btnGeo"
         app:backgroundTint="#00BCD4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnTemp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/temp"
-        android:textColorLink="#00BCD4"
-        app:backgroundTint="#00BCD4"
-        app:layout_constraintStart_toEndOf="@+id/btnSalvar"
-        app:layout_constraintTop_toBottomOf="@+id/btnSalvar" />
+        app:layout_constraintBottom_toBottomOf="@+id/btnMais"
+        app:layout_constraintEnd_toEndOf="@+id/btnSalvar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnPesquisar" />
 
     <ListView
         android:id="@+id/list "
-        android:layout_width="275dp"
-        android:layout_height="207dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="72dp"
-        app:layout_constraintEnd_toEndOf="@+id/btnGeo"
-        app:layout_constraintHorizontal_bias="0.421"
-        app:layout_constraintStart_toEndOf="@+id/btnGeo"
-        app:layout_constraintTop_toBottomOf="@+id/btnGeo">
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMais">
 
     </ListView>
+
+    <Button
+        android:id="@+id/btnMais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="28dp"
+        android:background="#00BCD4"
+        android:text="@string/mais"
+        app:backgroundTint="#00BCD4"
+        app:icon="?android:attr/textSelectHandle"
+        app:layout_constraintEnd_toStartOf="@+id/btnTemperature"
+        app:layout_constraintTop_toBottomOf="@+id/btnTemperature" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

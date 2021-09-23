@@ -14,6 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WeatherAplication">
         <activity android:name=".Temperature"></activity>
+        <activity android:name=".api_result" />
 
         <receiver android:name=".NewAppWidget">
             <intent-filter>

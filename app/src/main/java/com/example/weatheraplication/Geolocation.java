@@ -59,7 +59,8 @@ public class Geolocation extends AppCompatActivity {
                     //When permission denied
                     ActivityCompat.requestPermissions(Geolocation.this
                             , new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 44);
-                }
+               }
+
             }
         });
     }

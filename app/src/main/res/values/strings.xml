@@ -19,4 +19,24 @@
 
     <string name="nao">O sensor de temperatura não está funcionando</string>
     <string name="tente">Tente novamente</string>
+
+    <string name="mais">Mais</string>
+
+    <string name="nameAttractions">Nome da atração:</string>
+    <string name="cityAttractions">Cidade da atração:</string>
+    <string name="descAttractions">Descrição da atração:</string>
+    <string name="valueAttractions">Valor da atração:</string>
+    <string name="addressAttractions">Endereço da atração:</string>
+
+    <string name="localTemperature">Temperatura do local:</string>
+    <string name="dripIndicated">Roupa indicada:</string>
+    <string name="paris">Paris</string>
+    <string name="torre_de_ferro_gigante">Torre de ferro gigante</string>
+    <string name="_16_30">€ 16,30</string>
+    <string name="champs_de_mars_no_n_5_da_avenida_anatole_de_france">Champs de Mars n.°5 </string>
+    <string name="torre_eiffel">Torre eiffel</string>
+    <string name="_21">21°</string>
+    <string name="roupa_de_frio">Roupa de frio</string>
+
+
 </resources>

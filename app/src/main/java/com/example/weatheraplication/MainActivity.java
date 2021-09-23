@@ -17,10 +17,11 @@ public class MainActivity extends AppCompatActivity {
 
     private DataBase db;
 
-    Button btnPesquisar, btnListar, btnSalvar, btnGeo, btnTemp;
+    Button btnPesquisar, btnListar, btnSalvar, btnGeo, btnTemperature, btnMais;
     EditText editWord;
     String url;
     ListView list;
+
     ArrayAdapter adapter;
 
     @Override
@@ -35,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
         btnGeo = findViewById(R.id.btnGeo);
         editWord = findViewById(R.id.editTextWord);
         list = findViewById(R.id.list);
-        btnTemp = findViewById(R.id.btnTemp);
-
+        btnTemperature = findViewById(R.id.btnTemperature);
+        btnMais = findViewById(R.id.btnMais);
         btnSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,7 +58,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnTemp.setOnClickListener(new View.OnClickListener() {
+        btnMais.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                api();
+            }
+        });
+
+
+        btnTemperature.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Temp();
@@ -97,8 +106,16 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, Geolocation.class);
             startActivity(intent);
         }
+
          public void Temp(){
              Intent intent = new Intent(this, Temperature.class);
              startActivity(intent);
          }
-    }
+
+         protected void api() {
+          Intent intent = new Intent(this, api_result.class);
+           startActivity(intent);
+         }
+
+
+}
